@@ -5,14 +5,12 @@ items:
   metadata:
     annotations:
       deployment.kubernetes.io/revision: "1"
-    creationTimestamp: "2022-07-07T12:09:47Z"
     generation: 1
     labels:
       app: sunu-catalogue
     name: sunu-catalogue
-    namespace: catalogue
-    resourceVersion: "2272"
-    uid: 8d8aed50-80ab-4ddd-9d7f-a8767ecc19b6
+    namespace: catalogue-v2
+    owner: "Moussa WADE"
   spec:
     progressDeadlineSeconds: 600
     replicas: 1
@@ -43,25 +41,3 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 1
-    conditions:
-    - lastTransitionTime: "2022-07-07T12:09:55Z"
-      lastUpdateTime: "2022-07-07T12:09:55Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    - lastTransitionTime: "2022-07-07T12:09:47Z"
-      lastUpdateTime: "2022-07-07T12:09:55Z"
-      message: ReplicaSet "sunu-catalogue-666b848545" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    observedGeneration: 1
-    readyReplicas: 1
-    replicas: 1
-    updatedReplicas: 1
-kind: List
-metadata:
-  resourceVersion: ""
