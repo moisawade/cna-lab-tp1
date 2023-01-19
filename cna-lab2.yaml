@@ -18,7 +18,7 @@ spec:
         app: catalogue
     spec:
       containers:
-      - image: freemanpolys/catalogue-dsi
+      - image: dockermoisa/dakhine:1.0.2
         name: catalogue-dsi
         resources: {}
 status: {}
